@@ -21,9 +21,14 @@ let ctx= canvas.getContext("2d");
 
 
 let linesDB =[];
+let redoLinesDB=[];
 let line =[];
 let  isPendDown=false;
 canvas.addEventListener("mousedown",function(e){
+
+      if(redoLinesDB.length){
+            redoLinesDB=[];
+      }
 
       isPendDown=true;
 
