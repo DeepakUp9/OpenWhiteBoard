@@ -2,9 +2,12 @@
     box-sizing: border-box;
     margin: 0px;
     padding: 0px;
-    overflow: hidden;
+  
 }
 
+body{
+  overflow: hidden;
+}
 .tools-container{
 
     height: 100px;
@@ -29,6 +32,7 @@
 
      height: 55%;
      width: 10%;
+     position: relative;
 }
 
 .tool img{
@@ -36,11 +40,6 @@
     height: 100%;
     width: 100%;
 }
-
-
-
-
-
 
 
 
@@ -111,4 +110,68 @@
       height: 100%;
       width: 100%;
       object-fit: cover;
+ }
+
+ .active-tool{
+     /* transform: scale(1.2); */
+ }
+ .fade{
+     opacity: 0.5;
+ }
+ 
+ 
+
+ .tool-options{
+     height: 100px;
+     width: 100px;
+     position: absolute;
+     background: aliceblue;
+     top: 60px;
+     border-radius: 10px;
+     display: flex;
+     flex-direction: column;
+     justify-content: space-evenly;
+     padding: 2px;
+    
+ }
+
+ .hide{
+    display: none;
+}
+ .pen-size{
+    
+ }
+ .pen-size input{
+     width: 100%;
+ }
+ .eraser-size input{
+     width: 100%;
+ }
+
+ .pen-colors {
+     display: flex;
+     justify-content: space-evenly;
+     width: 100%;
+ }
+
+ .pen-colors div{
+     height: 15px;
+     width: 14px;
+     border-radius: 50px;
+ }
+
+ .black{
+     background: black;
+ }
+ .yellow{
+     background: yellow;
+ }
+ .blue{
+     background: blue;
+ }
+ .green {
+     background: green;
+ }
+ .red{
+     background:red;
  }

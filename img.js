@@ -28,7 +28,7 @@ downloadDiv.addEventListener("click",function(){
      // <a href="" download ="canvas.jpg"></a>
 
      let aTag =document.createElement("a");
-     aTag.download ="canvas.jpg";
+     aTag.download ="canvas.png";
      aTag.href =imagePath;
      aTag.click();
 })

@@ -15,14 +15,38 @@
     
    <div class="tools-container">
       <div class="tools-content">
-          <div class="tool"><img src="./Newicons/Black_Pencil.svg" alt=""></div>
-          <div class="tool"><img src="./Newicons/Eraser.svg" alt=""></div>
+          <div class="tool active-tool" id="pen">
+              <img src="./Newicons/Black_Pencil.svg" alt="">
+              <div class="tool-options hide">  
+                <div class="pen-size">
+                    <input type="range" name="" id="pensize">
+                </div>
+               
+                <div class="pen-colors">
+                    <div class="black"></div>
+                    <div class="yellow"></div>
+                    <div class="blue"></div>
+                    <div class="green"></div>
+                    <div class="red"></div>
+                </div>
+             </div>
+            </div>
+
+
+          <div class="tool fade" id="eraser">
+              <img src="./Newicons/Eraser.svg" alt="">
+              <div class="tool-options hide" > 
+                <div class="eraser-size">
+                    <input type="range" name="" id="erasersize">
+                </div>
+                </div>
+            </div>
           <div class="tool" id="undo"><img src="./Newicons/Undo.svg" alt=""></div>
           <div class="tool"id="redo"><img src="./Newicons/Redo.svg" alt=""></div>
           <div class="tool" id="sticky"><img src="./Newicons/StickyNote.svg" alt=""></div>
           <div class="tool" id="photo">
               <img src="./Newicons/Photo.svg" alt="">
-            <input type="file" name="" id="photo-upload">
+            <input type="file"  class="hide"  name="" id="photo-upload">
         </div>
 
           <div class="tool" id="download">
@@ -41,5 +65,6 @@
     <script src="./tools.js"></script>
     <script src="./sticky.js"></script>
     <script src="./img.js"></script>
+    <script src="./drawingTools.js"></script>
 </body>
 </html>
