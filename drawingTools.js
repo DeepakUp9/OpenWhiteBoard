@@ -95,6 +95,6 @@ eraser.addEventListener("click",function(){
 
           ctx.strokeStyle="white";
           ctx.lineWidth =currentEraserSize;
-
+    ////
     }
 });
