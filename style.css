@@ -113,7 +113,7 @@ body{
  }
 
  .active-tool{
-     /* transform: scale(1.2); */
+     transform: scale(1.2);
  }
  .fade{
      opacity: 0.5;
@@ -138,9 +138,13 @@ body{
  .hide{
     display: none;
 }
- .pen-size{
+
+ /* .pen-size{
     
- }
+ } */
+
+
+
  .pen-size input{
      width: 100%;
  }

@@ -4,6 +4,28 @@ let eraser =document.querySelector("#eraser");
 let penOptions = pen.querySelector(".tool-options");
 let eraserOptions = eraser.querySelector(".tool-options");
 
+let penSize =penOptions.querySelector("#pensize");
+let penColors =penOptions.querySelectorAll(".pen-colors div");
+
+penSize.addEventListener("change", function(){
+    //handle pen size
+
+    let penSizevalue = penSize.value;
+
+    //pensize set hoga
+    ctx.lineWidth =penSizevalue;
+});
+
+
+
+for(let i=0; i<penColors.length;i++){
+    penColors[i].addEventListener("click",function(e){
+        console.log(penColors);
+       let penColor =e.target.className;
+       ctx.strokeStyle =penColor;
+    });
+}
+
 pen.addEventListener("click",function(){
 
     if(pen.classList.contains("active-tool")){

@@ -44,7 +44,9 @@ canvas.addEventListener("mousedown",function(e){
       let pointObject ={
             x:x,
             y:y,
-            type:"md"
+            type:"md",
+            lineWidth : ctx.lineWidth,
+            strockeStyle : ctx.strokeStyle
       }
       line.push(pointObject);
      
